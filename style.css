@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 5%;
+}
+
+form {
+    margin-top: 50px;
+}
+
+img{
+    border-radius: 15px;
+    width: 30%;
+    height: 10%;
+}
+
+label{
+    font-family:'Hedvig Letters Serif', serif;
+    font-size: large;
+    
+}
+
+textarea {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+input{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    text-emphasis-color: black;
+    border-radius: 10px;
+}

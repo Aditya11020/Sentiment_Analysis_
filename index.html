@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}} ">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img src="https://miro.medium.com/v2/resize:fit:1000/1*xk0DrxA6Dtyzhfze_wDU7w.jpeg">
+    <h1>Sentiment Analysis detection</h1>
+        <form action="/analyze" method="post">
+            <label for="text">Enter the text:</label><br><br>&nbsp;
+            <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Test the Sentiment">
+        </form>
+
+    {% if text %}
+    <p>Text: {{ text }}</p>
+    <p>Sentiment: {{ sentiment_label }}</p>
+    {% endif %}
+</body>
+
+</html>
